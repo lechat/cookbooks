@@ -23,5 +23,5 @@ nbproject/
 /deployment/framework/sonar/.scrapy/
 *_flymake.py
 /deployment/framework/shared/adlt/tests/test*.zip
-/deployment/framework/shared/adlt/tests/*.out
+/deployment/framework/shared/adlt/tests/test_tenjin_templates.out
 tst.py
