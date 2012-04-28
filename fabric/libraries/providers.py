@@ -2,6 +2,8 @@ from fabric import operations
 from kokki import Provider
 
 class FabricFileProvider(Provider):
+    def action_put(self):
+        operations.put(self.resource.local_path, self.resource.remote_path)
     def action_create(self):
         path = self.resource.path
         write = False
