@@ -1,7 +1,7 @@
 from kokki import Service, ResourceArgument, ForcedListArgument, Environment
 
 class SimpleHTTPServer(Service):
-    provider = "*stop_server.SimpleHTTPServerProvider"
+    provider = "*simplehttpserver.SimpleHTTPServerProvider"
 
     # actions = ['start', 'stop', 'status']
 
