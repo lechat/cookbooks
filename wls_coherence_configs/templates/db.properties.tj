@@ -1,0 +1,26 @@
+# DAO
+# --------------------------------------------------------------------
+
+# Defines DAOFactory implementation
+db.daofactory.class=com.maersk.cache.da.oracle.OracleDAOFactory
+
+# OracleDAOFactory specific
+# Defines full url to the underlying database (with password) 
+# Parameter value usually comes from $ENV/coh/domain.properties
+oracle.db.url={==oracle_db_url==}
+
+# Parameter values are stored in $ENV/shared/credentials/db.credentials
+oracle.db.user={==ds_refdata_user==}
+oracle.db.pass={==ds_refdata_password==}
+oracle.db.schema={==ds_refdata_schema==}
+MARS_SCOPE.oracle.db.user={==ds_xleap_user==}
+MARS_SCOPE.oracle.db.pass={==ds_xleap_password==}
+MARS_SCOPE.oracle.db.schema={==ds_xleap_schema==}
+#
+# DB Preloading Settings
+# --------------------------------------------------------------------
+
+# Defines number of nodes required in the cluster to trigger initial 
+# cache preloading from the underlying database.
+# Parameter value usually comes from $ENV/coh/domain.properties
+db.preload_quorum=@@db.preload_quorum@@
